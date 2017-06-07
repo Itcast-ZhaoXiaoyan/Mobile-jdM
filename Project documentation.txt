@@ -1,0 +1,41 @@
+京东手机app界面
+首先，它是基于移动web开发的一款模仿“京东”商城网站的APP项目。
+以下是提交说明及项目开发追踪报告：
+    第一次提交，(1)完成了基本的界面布局以及样式设置。
+    移动web京东界面采用流式布局进行设计，以百分比作为主要的依据，同时也以移动端定位最主要的属性viewport作为一个知识点，进行相关说明。
+在进行手机移动端app开发时，必须在meta标签下，引入下列代码
+     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+     起到适配功效。
+   (2)同时对“头部搜索”区域jd_header进行详细设计。
+   它分为3部分：
+    logo区域————icon_logo、
+    input—search搜索区域—————icon_search、
+    button登录按钮区域—————login
+知识点：
+  a、position定位：
+  在进行布局时，采用对父元素————position:relative相对定位
+                   子元素————position:absolute绝对定位
+    同时借助top/bottom、left/right的结合，对元素位置进行准确定位
+                  代码中的  position:fixed;   是进行固定定位，它是相对于windows最外层容器进行布局
+  
+  b、background背景图片设置
+    由于在该项目中，采用的大多为小图标整合为一张图片上进行显示，即为“精灵图”，sprites应用
+    首先，引入背景图片background:url(...img/..) no-repeat;
+    其次，对背景图片进行大小限制，background-size、background-position
+    
+  c、box-sizing
+    该属性为盒子尺寸设置，用以表明以哪个尺寸作为标准，
+    在这个项目中，是以border-box作为依据，
+    即设置box-sizing:border-box;
+    
+  d、
+  
+  头部搜索区域，界面截图
+  
+
+
+
+
+                  
+              
+   
